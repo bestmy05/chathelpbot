@@ -1,0 +1,1 @@
+worker: python 도우미.py
