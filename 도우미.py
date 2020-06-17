@@ -213,4 +213,4 @@ async def on_message(message):
 	    #내용
 	    return
 access_token = os.environ["BOT_TOKEN"]
-client.run('BOT_TOKEN')
+client.run('access_token')
