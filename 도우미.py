@@ -16,11 +16,6 @@ import requests
 
 client = discord.Client()
 
-def not_sleep():
-	ULR = "http://expressme.herokuapp.com"
-	response = requests.get(URL)
-threading.Timer(500.0, not_sleep).start()
-
 @client.event
 async def on_ready():
     print('Logged in as')
