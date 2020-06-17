@@ -8,9 +8,6 @@ import urllib.request
 from urllib.request import urlopen, Request
 import bs4
 import 급식
-import time
-import threading
-import requests
 
 #참고자료 https://coding-y.tistory.com/9
 
