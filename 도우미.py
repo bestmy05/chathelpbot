@@ -8,10 +8,18 @@ import urllib.request
 from urllib.request import urlopen, Request
 import bs4
 import 급식
+import time
+import threading
+import requests
 
 #참고자료 https://coding-y.tistory.com/9
 
 client = discord.Client()
+
+def not_sleep():
+	ULR = "http://expressme.herokuapp.com"
+	response = requests.get(URL)
+threading.Timer(500.0, not_sleep).start()
 
 @client.event
 async def on_ready():
