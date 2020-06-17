@@ -113,6 +113,14 @@ async def on_message(message):
                 embed.add_field(name='목요알', value='국어주제 영어 창체진로 진로 과학 스포츠 스포츠', inline=False)
                 embed.add_field(name='금요일', value='체육 수학 국어 과학 영어주제 음악')
                 await message.channel.send(message.channel, embed=embed)
+            elif int_class_room == 2:
+                embed = discord.Embed(title='2반 시간표', description='2반 시간표입니다.', color=discord.Colour.blurple())
+                embed.add_field(name='월요일', value='창체진로 진로 체육 국어 과학 정보', inline=False)
+                embed.add_field(name='화요일', value='사회 영어 역사 과학 국어 체육 수학', inline=False)
+                embed.add_field(name='수요일', value='기가 기가 영어주제 수학 과학 정보', inline=False)
+                embed.add_field(name='목요알', value='영어 국어 역사 수학 미술 스포츠 스포츠', inline=False)
+                embed.add_field(name='금요일', value='음악 영어 과학 체육 사회 국어주제', inline=False)
+                await message.channel.send(message.channel, embed=embed)
 
     if message.content.startswith("!급식"):
         embed = discord.Embed(
